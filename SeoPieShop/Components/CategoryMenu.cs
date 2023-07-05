@@ -7,6 +7,7 @@ namespace SeoPieShop.Components
 	public class CategoryMenu : ViewComponent
 	{
 		private ICategoryRepository _categoryRepository;
+		//private IActionResult _result;
 
 		public CategoryMenu(ICategoryRepository categoryRepository)
 		{
@@ -17,6 +18,7 @@ namespace SeoPieShop.Components
 		{
 			var categories = _categoryRepository.AllCategories.OrderBy(c => c.CategoryName);
 			return View(categories);
+
 		}
 	}
 }
