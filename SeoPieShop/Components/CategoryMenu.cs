@@ -7,7 +7,7 @@ namespace SeoPieShop.Components
 	public class CategoryMenu : ViewComponent
 	{
 		private ICategoryRepository _categoryRepository;
-		//private IActionResult _result;
+		//private IActionResult 
 
 		public CategoryMenu(ICategoryRepository categoryRepository)
 		{
